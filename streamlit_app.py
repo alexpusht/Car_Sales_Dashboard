@@ -33,7 +33,7 @@ if df.empty:
 # Sidebar Filters
 st.sidebar.title("Filters")
 date_range = st.sidebar.date_input("Selecteer datumrange", [df['Date'].min(), df['Date'].max()])
-companies = st.sidebar.multiselect("Selecteer bedrijf(en)", df['Company'].unique())
+companies = st.sidebar.multiselect("Selecteer merk(en)", df['Company'].unique())
 regions = st.sidebar.multiselect("Selecteer regio('s)", df['Dealer_Region'].unique())
 genders = st.sidebar.multiselect("Selecteer geslacht(en)", df['Gender'].unique())
 
